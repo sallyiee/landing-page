@@ -78,6 +78,17 @@ $arrow-dimension: 20px;
 		background-color: rgba(0,0,0,0.2);
 		margin-bottom: 10px;
 	}
+
+}
+
+.social-media{
+	a{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	img{
+		width: 100%;
+	}
 }
 
 .logos{
