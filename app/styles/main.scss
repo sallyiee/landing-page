@@ -1,0 +1,151 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$arrow-dimension: 20px;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+//REUSABLE
+.main-container{
+	position: relative;
+	height: 100%;
+	background: #7e1a18 url('../images/new/bg.jpg') no-repeat;
+}
+
+.vertical-align-container{
+	height: 100vh;
+}
+
+.vertical-align{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center-text{
+	text-align: center;
+}
+
+.divider{
+	background-color: #FFF;	
+	height: 2px;
+	margin-bottom: 15px;
+	width: 12%;
+}
+
+
+//Top header
+
+.main-container{
+	// background: url('../images/main-bg.png') no-repeat;
+	background-size: contain;
+	color: #FFF;
+	font-family: 'Open Sans', 'Helvetica', sans;
+}
+
+.xmas-tree{
+	background: url('/images/new/christmas.png') no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.hero{
+	h1{
+		text-transform: uppercase;
+		font-size: 40px;
+		font-weight: bold;
+		line-height: 1;
+	}
+	h2{
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	p{
+		font-size: 16px;
+		padding: 30px 0;
+	}
+	ul{
+		padding: 0;
+		margin-top: 30px;
+	}
+	li{
+		line-height: 1.5;
+		list-style: none;
+		padding: 5px;
+		background-color: rgba(0,0,0,0.2);
+		margin-bottom: 10px;
+	}
+}
+
+.logos{
+	& > div{
+		text-align: center;
+	}
+}
+
+//ARTICLE
+article{
+	padding: 0 !important;
+	color: #FFF;
+	// height: 345px;
+
+	.content{
+		padding: 30px;
+		box-sizing: border-box;
+	}
+	p{
+		margin-bottom: 0;
+		box-sizing: border-box;
+	}
+	.top-arrow{
+		position: relative;
+		&:before{
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 $arrow-dimension $arrow-dimension $arrow-dimension;
+			border-color: transparent transparent #007bff transparent;
+			position: absolute;
+			top: -$arrow-dimension;
+			left: 37px;
+		}
+	}
+
+	.bottom-arrow{
+		position: relative;
+		&:before{
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: $arrow-dimension $arrow-dimension 0 $arrow-dimension;
+		border-color: #007bff transparent transparent transparent;	
+		position: absolute;
+		bottom: -$arrow-dimension;
+		left: 37px;
+		}
+	}
+	&.one{
+		background-color: #0070b7;
+		img{
+			margin: auto;
+		}
+	}
+	&.two{
+		background-color: #00436e;
+	}
+	&.three{
+		background-color: #7fb7db;
+	}
+
+}
+
+//images
+.full-width{
+	width: 100%;
+}
+
